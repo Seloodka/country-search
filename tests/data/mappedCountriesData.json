@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Canada",
+    "flagImagePath": "https://flagcdn.com/ca.svg",
+    "capital": "Ottawa",
+    "region": "Americas",
+    "population": 38005238,
+    "languages": ["English", "French"],
+    "details": {
+      "area": 9984670.0,
+      "currencies": ["Canadian dollar"],
+      "borders": ["USA"]
+    }
+  },
+  {
+    "name": "Germany",
+    "flagImagePath": "https://flagcdn.com/de.svg",
+    "capital": "Berlin",
+    "region": "Europe",
+    "population": 83240525,
+    "languages": ["German"],
+    "details": {
+      "area": 357114.0,
+      "currencies": ["Euro"],
+      "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"]
+    }
+  },
+  {
+    "name": "Japan",
+    "flagImagePath": "https://flagcdn.com/jp.svg",
+    "capital": "Tokyo",
+    "region": "Asia",
+    "population": 125836021,
+    "languages": ["Japanese"],
+    "details": {
+      "area": 377930.0,
+      "currencies": ["Japanese yen"],
+      "borders": null
+    }
+  },
+  {
+    "name": "Brazil",
+    "flagImagePath": "https://flagcdn.com/br.svg",
+    "capital": "Brasília",
+    "region": "Americas",
+    "population": 212559409,
+    "languages": ["Portuguese"],
+    "details": {
+      "area": 8515767.0,
+      "currencies": ["Brazilian real"],
+      "borders": ["ARG", "BOL", "COL", "FRA", "GUY", "PRY", "PER", "SUR", "URY", "VEN"]
+    }
+  },
+  {
+    "name": "Iceland",
+    "flagImagePath": null,
+    "capital": null,
+    "region": "Europe",
+    "population": 366425,
+    "languages": null,
+    "details": {
+      "area": 103000.0,
+      "currencies": null,
+      "borders": null
+    }
+  }
+]
