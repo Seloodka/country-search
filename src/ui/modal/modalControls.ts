@@ -1,3 +1,5 @@
+import { handleCloseModal } from '../../events/modalClose';
+
 const getElementByQuerySelector = (selector: string, element?: Element) => {
   const foundedElement = element ? element.querySelector(selector) : document.querySelector(selector);
   if (foundedElement === null) {
@@ -14,6 +16,8 @@ const openModalWithLayout = (modalLayout: DocumentFragment): void => {
   modalWindow.classList.remove('modal-window--hidden');
   modalWindow.classList.add('modal-window--visible');
   modalRenderElement.append(modalLayout);
+
+  document.body.addEventListener('keydown', handleCloseModal);
 };
 
 const closeModal = (): void => {
@@ -22,7 +26,10 @@ const closeModal = (): void => {
 
   modalWindow.classList.remove('modal-window--visible');
   modalWindow.classList.add('modal-window--hidden');
-  modalRenderElement.replaceChildren();
+
+  setTimeout(() => modalRenderElement.replaceChildren(), 200);
+
+  document.body.removeEventListener('keydown', handleCloseModal);
 };
 
 export { openModalWithLayout, closeModal };
