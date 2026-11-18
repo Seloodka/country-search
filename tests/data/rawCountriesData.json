@@ -1,0 +1,139 @@
+[
+  {
+    "name": "Canada",
+    "topLevelDomain": [".ca"],
+    "alpha2Code": "CA",
+    "alpha3Code": "CAN",
+    "callingCodes": ["1"],
+    "capital": "Ottawa",
+    "altSpellings": ["CA", "Canada"],
+    "subregion": "Northern America",
+    "region": "Americas",
+    "population": 38005238,
+    "latlng": [60.0, -95.0],
+    "demonym": "Canadian",
+    "area": 9984670.0,
+    "timezones": ["UTC-08:00", "UTC-07:00", "UTC-06:00", "UTC-05:00", "UTC-04:00", "UTC-03:30"],
+    "borders": ["USA"],
+    "nativeName": "Canada",
+    "numericCode": "124",
+    "flags": {
+      "svg": "https://flagcdn.com/ca.svg",
+      "png": "https://flagcdn.com/w320/ca.png"
+    },
+    "currencies": [{ "code": "CAD", "name": "Canadian dollar", "symbol": "$" }],
+    "languages": [
+      { "iso639_1": "en", "iso639_2": "eng", "name": "English", "nativeName": "English" },
+      { "iso639_1": "fr", "iso639_2": "fra", "name": "French", "nativeName": "Français" }
+    ],
+    "flag": "🇨🇦",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/4h8F1u5w3w4J7wGf7",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/1428125"
+    },
+    "populationDensity": 3.81
+  },
+  {
+    "name": "Germany",
+    "topLevelDomain": [".de"],
+    "alpha2Code": "DE",
+    "alpha3Code": "DEU",
+    "callingCodes": ["49"],
+    "capital": "Berlin",
+    "altSpellings": ["DE", "Federal Republic of Germany", "Bundesrepublik Deutschland"],
+    "subregion": "Western Europe",
+    "region": "Europe",
+    "population": 83240525,
+    "latlng": [51.0, 9.0],
+    "demonym": "German",
+    "area": 357114.0,
+    "timezones": ["UTC+01:00"],
+    "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"],
+    "nativeName": "Deutschland",
+    "numericCode": "276",
+    "flags": {
+      "svg": "https://flagcdn.com/de.svg",
+      "png": "https://flagcdn.com/w320/de.png"
+    },
+    "currencies": [{ "code": "EUR", "name": "Euro", "symbol": "€" }],
+    "languages": [{ "iso639_1": "de", "iso639_2": "deu", "name": "German", "nativeName": "Deutsch" }],
+    "flag": "🇩🇪",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/mD9FBMq1tD7B5D3v7",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/51477"
+    },
+    "populationDensity": 233.09
+  },
+  {
+    "name": "Japan",
+    "topLevelDomain": [".jp"],
+    "alpha2Code": "JP",
+    "alpha3Code": "JPN",
+    "callingCodes": ["81"],
+    "capital": "Tokyo",
+    "altSpellings": ["JP", "Nippon", "Nihon"],
+    "subregion": "Eastern Asia",
+    "region": "Asia",
+    "population": 125836021,
+    "latlng": [36.0, 138.0],
+    "demonym": "Japanese",
+    "area": 377930.0,
+    "timezones": ["UTC+09:00"],
+    "nativeName": "日本",
+    "numericCode": "392",
+    "flags": {
+      "svg": "https://flagcdn.com/jp.svg",
+      "png": "https://flagcdn.com/w320/jp.png"
+    },
+    "currencies": [{ "code": "JPY", "name": "Japanese yen", "symbol": "¥" }],
+    "languages": [{ "iso639_1": "ja", "iso639_2": "jpn", "name": "Japanese", "nativeName": "日本語" }],
+    "flag": "🇯🇵",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/NGTLSCSrA8bMrvnX9",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/382313"
+    },
+    "populationDensity": 333.0
+  },
+  {
+    "name": "Brazil",
+    "topLevelDomain": [".br"],
+    "alpha2Code": "BR",
+    "alpha3Code": "BRA",
+    "callingCodes": ["55"],
+    "capital": "Brasília",
+    "altSpellings": ["BR", "Brasil", "Federative Republic of Brazil"],
+    "subregion": "South America",
+    "region": "Americas",
+    "population": 212559409,
+    "latlng": [-10.0, -55.0],
+    "demonym": "Brazilian",
+    "area": 8515767.0,
+    "timezones": ["UTC-05:00", "UTC-04:00", "UTC-03:00", "UTC-02:00"],
+    "borders": ["ARG", "BOL", "COL", "FRA", "GUY", "PRY", "PER", "SUR", "URY", "VEN"],
+    "nativeName": "Brasil",
+    "numericCode": "076",
+    "flags": {
+      "svg": "https://flagcdn.com/br.svg",
+      "png": "https://flagcdn.com/w320/br.png"
+    },
+    "currencies": [{ "code": "BRL", "name": "Brazilian real", "symbol": "R$" }],
+    "languages": [{ "iso639_1": "pt", "iso639_2": "por", "name": "Portuguese", "nativeName": "Português" }],
+    "flag": "🇧🇷",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/waht5Rn1F6E3r1jA8",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/59470"
+    },
+    "populationDensity": 24.96
+  },
+  {
+    "name": "Iceland",
+    "alpha2Code": "IS",
+    "alpha3Code": "ISL",
+    "region": "Europe",
+    "population": 366425,
+    "area": 103000.0,
+    "nativeName": "Ísland",
+    "flag": "🇮🇸",
+    "populationDensity": 3.56
+  }
+]
