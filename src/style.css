@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  background: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+}
+
+.country-search {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#country-search-input {
+  padding: 5px 10px;
+  background-color: rgb(155, 235, 231);
+  border: solid 3px rgb(97, 116, 226);
+  border-radius: 8px;
+}
