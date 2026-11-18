@@ -1,5 +1,7 @@
 import type { mappedResponse } from '../core/mapCountryResponse';
 import { createRetryButton } from './inputs';
+import { createCardModalWithDetails } from './modal/createModalFromData';
+import { openModalWithLayout } from './modal/modalControls';
 import flagPlaceholder from '../assets/flagPlaceholder.png';
 
 const getRenderContainer = (): HTMLDivElement => {
@@ -39,6 +41,10 @@ const createCountryCardsFromData = (mappedCountriesData: mappedResponse[]): Docu
     cardHeader.append(cardFlag, cardName);
     cardWrapper.append(cardHeader, cardCapital, cardPopulation, cardLanguages);
     countryCards.append(cardWrapper);
+
+    cardWrapper.addEventListener('click', () => {
+      openModalWithLayout(createCardModalWithDetails(country.details, cardWrapper));
+    });
   });
 
   return countryCards;

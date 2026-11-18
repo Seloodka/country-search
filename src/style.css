@@ -89,6 +89,52 @@ body {
   }
 }
 
+.modal-window {
+  position: fixed;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100svw;
+  height: 100svh;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+.modal-window--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-window--visible {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-window__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 400px;
+  padding: 20px 10px;
+  background-color: rgb(177, 200, 233);
+  border-radius: 20px;
+
+  img {
+    max-width: 380px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .country-search__result-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    img {
+      align-self: center;
+    }
+  }
+}
+
 .loader {
   border: 8px solid rgb(177, 200, 233);
   border-top: 8px solid rgb(97, 116, 226);

@@ -1,3 +1,4 @@
+import { handleCloseModal } from '../events/modalClose';
 import { createSearchField } from './inputs';
 
 const createPageLayout = (): DocumentFragment => {
@@ -30,4 +31,21 @@ const createSearchAppSection = (): DocumentFragment => {
   return searchAppSection;
 };
 
-export { createPageLayout, createSearchAppSection };
+const createModalWindowBaseLayout = (): DocumentFragment => {
+  const modalWindowLayout = new DocumentFragment();
+
+  const modalBackdrop = document.createElement('div');
+  const modalWrapper = document.createElement('article');
+
+  modalBackdrop.classList.add('modal-window', 'modal-window--hidden');
+  modalWrapper.classList.add('modal-window__wrapper');
+
+  modalBackdrop.append(modalWrapper);
+  modalWindowLayout.append(modalBackdrop);
+
+  modalBackdrop.addEventListener('mousedown', handleCloseModal);
+
+  return modalWindowLayout;
+};
+
+export { createPageLayout, createSearchAppSection, createModalWindowBaseLayout };
