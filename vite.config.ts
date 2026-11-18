@@ -1,21 +1,24 @@
 import { defineConfig } from 'vitest/config';
 import { resolve } from 'path';
 
+const rootDir = import.meta.dirname;
+
 export default defineConfig({
-  server: {
-    open: '/src/index.html',
-  },
+  base: './',
+  root: resolve(rootDir, 'src'),
+  publicDir: resolve(rootDir, 'public'),
 
   build: {
-    rollupOptions: {
-      input: {
-        main: resolve(import.meta.dirname, 'src/index.html'),
-      },
-    },
+    outDir: resolve(rootDir, 'dist'),
+    emptyOutDir: true,
+  },
+
+  server: {
+    open: '/index.html',
   },
 
   test: {
-    dir: './tests',
+    dir: resolve(rootDir, 'tests'),
     environment: 'node',
     globals: true,
   },
