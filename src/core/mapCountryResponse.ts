@@ -1,4 +1,4 @@
-import type { Country, Currency, Flags, Language } from '../types/apiResponse';
+import type { Country, Flags } from '../types/apiResponse';
 
 interface countryAdditionalData {
   area: number | null;
@@ -34,23 +34,18 @@ const getCountryFlagImage = (flagPath: Flags | undefined): string | null => {
   return null;
 };
 
-const createNameExtractor = <T extends ItemWithNameProperty>(): ((items: T[] | undefined) => string[] | null) => {
-  return (items: T[] | undefined): string[] | null => {
-    if (items === undefined || items.length === 0) {
-      return null;
-    }
+const getNames = (items: ItemWithNameProperty[] | undefined): string[] | null => {
+  if (items === undefined || items.length === 0) {
+    return null;
+  }
 
-    const names = items.map((item) => item.name || null).filter((name) => name !== null);
-    if (names.length === 0) {
-      return null;
-    }
+  const names = items.map((item) => item.name || null).filter((name) => name !== null);
+  if (names.length === 0) {
+    return null;
+  }
 
-    return names;
-  };
+  return names;
 };
-
-const getCountryLanguages = createNameExtractor<Language>();
-const getCountryCurrencies = createNameExtractor<Currency>();
 
 const mapCountryResponse = (raw: Country[]): mappedResponse[] => {
   return raw.map((country) => {
@@ -60,10 +55,10 @@ const mapCountryResponse = (raw: Country[]): mappedResponse[] => {
       capital: country.capital || null,
       region: country.region,
       population: country.population || null,
-      languages: getCountryLanguages(country.languages),
+      languages: getNames(country.languages),
       details: {
         area: country.area || null,
-        currencies: getCountryCurrencies(country.currencies),
+        currencies: getNames(country.currencies),
         borders: country.borders || null,
       },
     };
